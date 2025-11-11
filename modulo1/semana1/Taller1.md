@@ -110,3 +110,93 @@ Debe incluir:
 - Estructura condicional  
 - Ciclo  
 - Lista o diccionario
+
+# Nivel 3 — Bucles y Repetición
+# Objetivo: Dominar for y while, control de iteraciones y sumatorias.
+
+# Contar del 1 al 10.
+# Sumatoria del 1 al n. 
+# Tabla de multiplicar.
+# Contador regresivo con while.
+# Adivina el número (usar random).
+# Sumar hasta que el usuario escriba 0.
+
+
+def count():  
+    n = int(input("Enter the number you want to count to: "))
+    for i in range(n):
+        print(i + 1)
+
+
+
+def summation():
+    n = int(input("ingresa numero para detener la secuencias: "))
+    sum = 0    
+    for i  in range(n+1): 
+        print(f"este es el numero a contar{i}")
+        sum += i 
+        print(sum)
+
+
+
+
+
+
+nums=[1,2,3,4,5]
+
+def show(list):
+    first = list[0]
+    last = list[4]
+
+    return first, last
+
+valor1,valor2 =show(nums)
+    
+print(valor1,valor2)
+
+
+
+
+sapo = lambda s1,s2: s1 * s2
+result = sapo(5,5)
+
+print(f"Hay {result} sapos")
+
+
+
+
+
+
+
+
+# def menu():
+#     while True:
+#         print("\n====== MENÚ PRINCIPAL ======")
+#         print("1. Contar del 1 al 10")
+#         print("2. Numero positivo, negativo o cero")
+#         print("3. Par o Impar")
+#         print("4. Calculadora basica")
+#         print("5. Promedio")
+#         print("6. Comparar 3 numeros")
+#         print("7. Salir")
+
+#         choice = input("Elige una opción (1-7): ")
+
+#         if choice == "1":          
+#            contar()
+#         elif choice == "2":
+#             number()
+#         elif choice == "3":
+#             par_impar()
+#         elif choice == "4":
+#             calculator()
+#         elif choice == "5":
+#             classifier()
+#         elif choice == "6":
+#             compare()
+#         elif choice == "7":
+#             print("¡Hasta luego!")
+#             break
+#         else:
+#             print("Opción no válida. Intenta de nuevo.")
+# menu()
